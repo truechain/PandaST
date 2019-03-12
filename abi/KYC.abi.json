@@ -1,0 +1,281 @@
+[{
+  "constant": true,
+  "inputs": [{
+    "name": "_account",
+    "type": "address"
+  }],
+  "name": "proveOf",
+  "outputs": [{
+    "name": "proveURL",
+    "type": "string"
+  }, {
+    "name": "proveHash",
+    "type": "bytes32"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [{
+    "name": "_account",
+    "type": "address"
+  }],
+  "name": "countryOf",
+  "outputs": [{
+    "name": "countryCode",
+    "type": "uint8"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [{
+    "name": "_account",
+    "type": "address"
+  }],
+  "name": "ownerOf",
+  "outputs": [{
+    "name": "name",
+    "type": "string"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [{
+    "name": "_id",
+    "type": "uint256"
+  }],
+  "name": "countryByID",
+  "outputs": [{
+    "name": "countryCode",
+    "type": "uint8"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [{
+    "name": "_id",
+    "type": "uint256"
+  }],
+  "name": "ownerByID",
+  "outputs": [{
+    "name": "name",
+    "type": "string"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": false,
+  "inputs": [{
+    "name": "_account",
+    "type": "address"
+  }, {
+    "name": "_id",
+    "type": "uint256"
+  }],
+  "name": "linkAccount",
+  "outputs": [],
+  "payable": false,
+  "stateMutability": "nonpayable",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [{
+    "name": "_add",
+    "type": "address"
+  }],
+  "name": "isUnderwriter",
+  "outputs": [{
+    "name": "",
+    "type": "bool"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [{
+    "name": "_add1",
+    "type": "address"
+  }, {
+    "name": "_add2",
+    "type": "address"
+  }],
+  "name": "isSameUser",
+  "outputs": [{
+    "name": "",
+    "type": "bool"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [{
+    "name": "_account",
+    "type": "address"
+  }],
+  "name": "ownerIDOf",
+  "outputs": [{
+    "name": "id",
+    "type": "uint256"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [{
+    "name": "_account",
+    "type": "address"
+  }],
+  "name": "incomeLevelOf",
+  "outputs": [{
+    "name": "incomeLevel",
+    "type": "uint256"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": false,
+  "inputs": [{
+    "name": "_account",
+    "type": "address"
+  }, {
+    "name": "_isManager",
+    "type": "bool"
+  }],
+  "name": "setManager",
+  "outputs": [],
+  "payable": false,
+  "stateMutability": "nonpayable",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [{
+    "name": "_add",
+    "type": "address"
+  }],
+  "name": "isRegistered",
+  "outputs": [{
+    "name": "",
+    "type": "bool"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": false,
+  "inputs": [{
+    "name": "_id",
+    "type": "uint256"
+  }, {
+    "name": "_proveURL",
+    "type": "string"
+  }, {
+    "name": "_proveHash",
+    "type": "bytes32"
+  }, {
+    "name": "_userType",
+    "type": "uint8"
+  }, {
+    "name": "_name",
+    "type": "string"
+  }, {
+    "name": "_incomeLevel",
+    "type": "uint64"
+  }, {
+    "name": "_country",
+    "type": "uint8"
+  }],
+  "name": "updateCustomer",
+  "outputs": [],
+  "payable": false,
+  "stateMutability": "nonpayable",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [{
+    "name": "_id",
+    "type": "uint256"
+  }],
+  "name": "incomeLevelByID",
+  "outputs": [{
+    "name": "incomeLevel",
+    "type": "uint256"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [{
+    "name": "_id",
+    "type": "uint256"
+  }],
+  "name": "proveByID",
+  "outputs": [{
+    "name": "proveURL",
+    "type": "string"
+  }, {
+    "name": "proveHash",
+    "type": "bytes32"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [{
+    "name": "",
+    "type": "address"
+  }],
+  "name": "isManager",
+  "outputs": [{
+    "name": "",
+    "type": "bool"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [],
+  "name": "administrator",
+  "outputs": [{
+    "name": "",
+    "type": "address"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "inputs": [{
+    "name": "_admin",
+    "type": "address"
+  }],
+  "payable": false,
+  "stateMutability": "nonpayable",
+  "type": "constructor"
+}, {
+  "anonymous": false,
+  "inputs": [{
+    "indexed": true,
+    "name": "account",
+    "type": "address"
+  }, {
+    "indexed": false,
+    "name": "isManagerNow",
+    "type": "bool"
+  }],
+  "name": "SetManager",
+  "type": "event"
+}]
